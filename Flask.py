@@ -8,6 +8,7 @@ app = Flask(__name__)
 def hello():
     return 'Hello, World!'
 
+# this should return an error
 @app.route('/test')
 def test():
     return render_template('test.html')
