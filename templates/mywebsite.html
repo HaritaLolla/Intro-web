@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='mydesign.css')}}">
+	<link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='mylayout.css')}}">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+
+<body background="../static/images/PTE-MIK.jpg"> 
+<div class="page">
+	<header>University of Pecs - Faculty of Engineering and Information Technology</header>
+	<nav>
+		<a href="https://english.mik.pte.hu/news/portal">News</a>
+		<a>Articles</a>
+		<a href="https://www.google.com/search?q=pte+mik&source=lnms&tbm=isch&sa=X&ved=0ahUKEwja95_ZvoHhAhVj-ioKHfnDB7wQ_AUIDygC&biw=1920&bih=920">Pictures</a>
+		
+	</nav>
+	<section>
+		<h1>All you need to know</h1>
+		<p>The Faculty of Engineering and Information Technologies was founded in 1970 with the name of Pollack Mihály Technical College. Its legal predecessors were the Polytechnic of Building Services of Budapest and the Chemical Industrial Engineering Polytechnic of Pécs. 
+		A Building Installations Department and Civil Engineering Department were created in 1971. From 1st July, 1995 the college was integrated into Janus Pannonius University, which changed its name to the University of Pécs in 2000. It has been functioning as a faculty since 2004; from 2006 it was the Pollack Mihály Faculty of Engineering, from 2011 as the Pollack Mihály Faculty of Engineering and Information Technology – showing the increased emphasis on information technology in both education and research. In 2015 the name of our institution was simplified to the Faculty of Engineering and Information Technology, University of Pécs.</p>
+
+		<img src= "{{url_for('static', filename = 'images/mik.jpg')}}" width="100%">
+		<p>The refurbishment of the 20,000 m2 educational and research building complex was completed in 2007-2008 with an investment of 3.5 billion Hungarian forints. As part of the campus, the dormitory, which can accommodate 800 students, was renewed and double rooms with bathrooms were created. During the comprehensive refurbishment of the faculty buildings, classrooms were equipped with air conditioning and modern multimedia equipment. 
+		State-of-the-art instruments and equipment were installed in the labs adjacent to the main educational building</p>
+		
+		<img src= "{{url_for('static', filename = 'images/int.jpg')}}" width="100%">
+		
+
+	</section>
+	<footer>
+		Simple website
+	</footer>
+</div>
+
+</body>
+</html>

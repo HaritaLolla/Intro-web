@@ -1,0 +1,20 @@
+html,body{height: 100%;}
+
+div.page>header{grid-area:head;}
+div.page>nav{grid-area:menu;}
+div.page>section{grid-area:cont;}
+div.page>footer{grid-area:foot;}
+
+div.page{
+	min-height: 100%;
+	width: 800px;
+	margin:0 auto;
+	display: grid;
+	grid-template-areas: 
+		'head head'
+		'menu cont'
+		'foot foot'
+	;
+	grid-template-rows: 160px auto 100px;
+	grid-template-columns: 200px 600px;
+}
